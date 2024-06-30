@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Responsive Portfolio Website Design</title>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .heading {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .certifications-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .certifications-box {
+            flex: 1;
+            min-width: 250px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .certifications-box h3 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .certifications-box p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+    </style>
+
+<style>
+    .tools-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .tools-box {
+        flex: 1 0 300px; /* Adjust width as needed */
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+
+    .tools-box h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tools-box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .tools-box ul li {
+        margin-bottom: 5px;
+    }
+</style>
+
+
+<style>
+    .work-experience-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 20px 0;
+    }
+
+    .work-experience-box {
+        flex: 1;
+        min-width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+
+    .work-experience-box h3 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .work-experience-box p {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .work-experience-box ul {
+        text-align: left;
+        list-style-type: disc;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .work-experience-box ul li {
+        margin-bottom: 10px;
+    }
+</style>
+
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#work-experience">Experience</a>
+            <a href="#tools">Tools</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact"> Contact</a>
+           
+    
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Dhayanithi Ramaraj</h1>
+            
+            <p>
+                Result-driven IT security professional understanding of security protocols, risk management, and threat mitigation. Experienced in safeguarding systems, 
+networks, and data against security breaches through preventive and reactive measures, implementing robust security solutions, conducting vulnerability 
+assessments, and responding to incidents swiftly to minimize impact. Skillset in developing strong analytical mindset and behavioural analytics for 
+identification, remediation, containment, and eradication of threats targeting users and company infrastructure...</p>
+
+                <div class="social-media">
+                    <a href="https://www.facebook.com/DhayanithiRamaraju"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/dhyanithi2301"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.linkedin.com/in/dhayanithiramaraju2301"><i class='bx bxl-linkedin'></i></a>
+                    
+                </div>
+                
+            <a href="https://drive.google.com/file/d/19AjM_OK9qM_DI1LT3tZGwvkGy_fgUbS-/view?usp=sharing" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-shield'></i>
+                    <h3>Cyber Security </h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-data'></i>
+                    <h3>Data Analyst</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-network-chart'></i>
+                    <h3>Web Developement</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-user'></i>
+                    <h3>Security Trainee</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/Dhayanithi.png" alt="" >
+        </div>
+    </section>
+
+    <!-- about section design -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/Pic.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+    
+        
+        <p>
+            <b>Greetings! I'm Dhayanithi Ramaraj, a passionate Cyber Security Professional and SOC Member specializing in proactive defense strategies and threat mitigation.</b>
+            <br> With hands-on expertise in safeguarding systems, networks, and data, I excel in network security, ethical hacking, and vulnerability management. Proficient in cybersecurity tools like Kali Linux, Nmap, and Metasploit, I implement tailored security measures using SQL, Python, Java, and PowerShell.
+            Driven by curiosity and commitment, I've completed 15+ modules covering Operating Systems & Networking Fundamentals, Web Application Hacking, and Ethical Hacking Techniques. Experienced in configuring IDS/IPS systems, implementing SIEM solutions, and crafting impactful data analysis with Tableau and Power BI. I thrive on translating complex insights into actionable strategies, creating compelling dashboards that empower stakeholders.
+            Passionate about staying ahead of cybersecurity trends, I'm eager to contribute to innovative organizations. Let's connect and enhance digital security together.
+</p>
+        </p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+</section>
+
+
+<!--Work expierence-->
+
+<section id="work-experience">
+    <div class="section-heading">
+        <h2 class="heading">Work Experience</h2>
+    </div>
+    <div class="work-experience-container">
+        <div class="work-experience-box">
+            <h3>Cybersecurity and Ethical Hacking Internship</h3>
+            <p><strong>Company:</strong> Edureka</p>
+            <p><strong>Duration:</strong> Jan. 2024 - Present</p>
+            <ul>
+                <li>Core Cybersecurity Skills Development:
+                    <ul>
+                        <li>Progressed through 15+ comprehensive modules covering Domain Management, SSL Certificates, and Security, Vulnerability Management, Linux and Windows Server Operating Systems, and Ethical Hacking Techniques.</li>
+                    </ul>
+                </li>
+                <li>Tools and Frameworks Proficiency:
+                    <ul>
+                        <li>Engaged with 10+ industry-standard tools such as Kali Linux, Burp Suite, OWASP, CSPM tools, and Recon-ng to simulate real-world cyber-attacks and defenses. Proficient in investigating/troubleshooting IT Server Infrastructure related incidents.</li>
+                        <li>Demonstrated proficiency in implementing key frameworks: Mitre Att&CK, NIST, and ITIL processes for threat analysis and detection.</li>
+                    </ul>
+                </li>
+                <li>Hands-On Project Experience:
+                    <ul>
+                        <li>Crafted an industry-grade project involving penetration testing on an E-Commerce website, utilizing Kali Linux, Burp Suite, and Recon-ng to discover 5 hidden flags and 10 vulnerabilities.</li>
+                    </ul>
+                </li>
+                <li>Cloud Security:
+                    <ul>
+                        <li>Developed understanding and skills in Microsoft Azure Cloud Hosting, including best practices for securing cloud environments. Familiarized with the security features of 3 major cloud service providers and Web Application Firewalls.</li>
+                    </ul>
+                </li>
+                <li>Digital Forensics and Future Certifications:
+                    <ul>
+                        <li>Developed skills in digital forensics, contributing to a well-rounded understanding of cybersecurity, and certified in Cybersecurity and Ethical Hacking. Knowledgeable in LAMP based applications and Software Development / Deployment pipelines.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="work-experience-box">
+            <h3>Data Analyst Intern</h3>
+            <p><strong>Company:</strong> Capgemini</p>
+            <p><strong>Duration:</strong> Feb. 2022 – Apr. 2022</p>
+            <ul>
+                <li>Project Contributions:
+                    <ul>
+                        <li>Contributed to 5+ data visualization projects and conducted exploratory data analysis on datasets exceeding 1 million records. Collaborated with 4+ cross-functional teams to define project scopes and deliver actionable insights.</li>
+                    </ul>
+                </li>
+                <li>Data Manipulation and Analysis:
+                    <ul>
+                        <li>Utilized Python, R, and SQL to manipulate and analyze data, achieving a 20% improvement in processing efficiency & extracting meaningful insights and trends from large datasets, enhancing data-driven decision-making processes and problem solving.</li>
+                    </ul>
+                </li>
+                <li>Dashboard and Report Creation:
+                    <ul>
+                        <li>Created 10+ visually compelling dashboards and reports using Tableau and Power BI for stakeholders.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section id="tools">
+    <div class="section-heading">
+        <h2 class="heading">Tools & Frameworks</h2>
+    </div>
+    <div class="tools-container">
+        <div class="tools-box">
+            <h3>Languages:</h3>
+            <ul>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Go</li>
+                <li>PowerShell</li>
+            </ul>
+        </div>
+        <div class="tools-box">
+            <h3>Databases:</h3>
+            <ul>
+                <li>MySQL</li>
+                <li>Oracle DB</li>
+            </ul>
+        </div>
+        <div class="tools-box">
+            <h3>Web Development:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="tools-box">
+            <h3>Software Tools:</h3>
+            <ul>
+                <li>VS Code</li>
+                <li>GitHub</li>
+                <li>MongoDB</li>
+                <li>Microsoft Azure</li>
+                <li>AWS</li>
+                <li>Maltgeo</li>
+            </ul>
+        </div>
+        <div class="tools-box">
+            <h3>Data Analysis & Visualization:</h3>
+            <ul>
+                <li>Python</li>
+                <li>Tableau</li>
+                <li>Microsoft Excel</li>
+                <li>PowerBI</li>
+            </ul>
+        </div>
+        <div class="tools-box">
+            <h3>Cybersecurity Tools:</h3>
+            <ul>
+                <li>Kali Linux</li>
+                <li>Nmap</li>
+                <li>Nikto</li>
+                <li>Splunk</li>
+                <li>BEEF</li>
+                <li>Metasploit</li>
+                <li>Wireshark</li>
+                <li>OWASP</li>
+                <li>OSNIT</li>
+                <li>SIEM Tools</li>
+                <li>Storm Breaker</li>
+                <li>Playbooks</li>
+            </ul>
+        </div>
+        <div class="tools-box">
+            <h3>Key Frameworks:</h3>
+            <ul>
+                <li>Mitre Att&CK</li>
+                <li>NIST</li>
+                <li>ISO27001</li>
+                <li>CIS</li>
+                <li>General Data Protection Regulation (GDPR)</li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section id="certifications">
+    <div class="section-heading">
+        <h2 class="heading">Certifications</h2>
+    </div>
+    <div class="certifications-container">
+        <div class="certifications-box">
+            <h3>AWS Cloud Practitioner Essentials</h3>
+            <p>Issued by: Amazon Web Services (AWS)</p>
+            <p>Date Issued: February 2024</p>
+        </div>
+        <div class="certifications-box">
+            <h3>Google Cybersecurity Certificate</h3>
+            <p>Issued by: Google</p>
+            <p>Date Issued:04 Apirl 2024</p>
+        </div>
+        <div class="certifications-box">
+            <h3>Alison Penetration Testing Engineer Certificate</h3>
+            <p>Issued by: Alison</p>
+            <p>Date Issued: 30 Apirl 2024</p>
+        </div>
+        <div class="certifications-box">
+            <h3>Pirple Cyber Security: White-Hat Ethical-Hacking Certificate</h3>
+            <p>Issued by: Pirple</p>
+            <p>Date Issued:20 May 2024</p>
+        </div>
+        <div class="certifications-box">
+            <h3>Edureka Cybersecurity and Ethical-Hacking Internship</h3>
+            <p>Issued by: Edureka</p>
+            <p>Date Issued:10 June 2024</p>
+        </div>
+        <div class="certifications-box">
+            <h3>Volunteer : Gambling Awareness Group</h3>
+            <p>Issued by: Sheffield Minds & Univeristy of Sheffield </p>
+            <p>Date Issued: 10 May 2024</p>
+        </div>
+        <!-- Add more certification boxes as needed -->
+    </div>
+</section>
+
+
+
+    <!-- services section design -->
+    
+    <section class="services" id="services">
+        <h2 class="heading">Cyber Security Services</h2>
+    
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-shield-alt'></i>
+                <h3>Secure User Access Management</h3>
+                <p>Implement secure user access management in Linux environments to protect against unauthorized access and ensure data confidentiality. Highlighting expertise in security protocols and risk management, ensuring robust protection.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-network-chart'></i>
+                <h3>Web Application Vulnerability Analysis</h3>
+                <p>Thorough analysis of web application source code vulnerabilities using tools like Nmap, Wireshark, and Metasploit to identify and mitigate security risks. SEO benefits include optimized web application security strategies.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-detective'></i>
+                <h3>Network Traffic Analysis and Website Information Gathering</h3>
+                <p>Analyze network traffic using tools like Wireshark and Netcraft to detect and mitigate potential threats, while also utilizing Linux-based tools such as Nmap and Maltego for comprehensive information gathering on websites, identifying potential vulnerabilities and risks. Clients and employers benefit from detailed threat analysis and proactive security measures.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>        
+            <div class="services-box">
+                <i class='bx bx-chart'></i>
+                <h3>Data Analysis and Visualization</h3>
+                <p>Utilize powerful tools like Python and Tableau for in-depth data analysis and visualization, extracting actionable insights for informed decision-making. Call to action includes leveraging data-driven insights for strategic cyber security improvements.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-database'></i>
+                <h3>Database Management and Security</h3>
+                <p>Proficient in SQL queries and database management, ensuring efficient data organization, retrieval, and manipulation for data-driven decision-making. Conduct assessments of database security configurations and access controls, ensuring data integrity and confidentiality.</p>
+                <a href="#" class="btn">Read More</a>
+            </div> 
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Custom Cybersecurity Solutions</h3>
+                <p>Develop tailored cybersecurity solutions aligned with your organization's unique needs. From secure coding practices to threat modeling and penetration testing, ensure your digital assets remain resilient against cyber threats.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+    
+        </div>
+    </section>
+        
+
+<!-- portfolio section design -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Highlighted Projects</h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="images/pentest2.jpeg" alt="E-Commerce Penetration Testing">
+            <div class="portfolio-layer">
+                <h4>E-Commerce Penetration Testing</h4>
+                <p>Conducted penetration testing on an E-Commerce website using Kali Linux, Burp Suite, and Recon-ng, identifying 5 hidden flags and 10 vulnerabilities.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/info1.png" alt="Website Information Gathering">
+            <div class="portfolio-layer">
+                <h4>Website Information Gathering</h4>
+                <p>Utilized Nmap, Nikto, and Recon-ng for website reconnaissance and information gathering, identifying vulnerabilities and providing security improvement recommendations.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/malware1.jpeg" alt="Malware Creation Project">
+            <div class="portfolio-layer">
+                <h4>Malware Creation Project</h4>
+                <p>Developed malware using FatRat, Metasploitable, and Veil, implementing techniques to bypass antivirus detection and experimenting with phishing, USB drops, and network attacks.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/CFT.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Capture The Flag Challenge</h4>
+                <p>Participated in a Capture The Flag (CTF) challenge, applying skills acquired throughout the internship program to solve real-world cyber security challenges.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/cloud3.avif" alt="Cloud Security Project">
+            <div class="portfolio-layer">
+                <h4>Ethical Hacking and Cloud Security</h4>
+                <p>Implemented cloud security measures and conducted ethical hacking exercises using Kali Linux, Burp Suite, and AWS services. Demonstrated proficiency in securing cloud environments and identifying vulnerabilities.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        
+        <div class="portfolio-box">
+            <img src="images/cisco1.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Network Project Execution and Troubleshooting</h4>
+                <p>Executed Cisco Packet Tracer projects, managing packet transmission, data authentication, 
+                    and server node troubleshooting TCP/IP framework.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/Vero.png" alt="Housing Prices Crisis Data Analytics">
+            <div class="portfolio-layer">
+                <h4>Housing Prices Crisis Data Analytics</h4>
+                <p>Conducted in-depth data analysis on housing prices during a crisis period using Python, SQL, and Tableau.
+                     Extracted insights to understand market trends, predict fluctuations, and inform strategic decisions.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/Bert.png" alt="BERT NLP Project">
+            <div class="portfolio-layer">
+                <h4>BERT NLP Project</h4>
+                <p>Implemented BERT (Bidirectional Encoder Representations from Transformers) to analyze global gaming trends and extract insights from top comments on Reddit. 
+                    Utilized Python for data scraping, NLP preprocessing, and visualization using Matplotlib.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        
+        <div class="portfolio-box">
+            <img src="images/keylogger.jpeg" alt="Keylogger Backdoor Project">
+            <div class="portfolio-layer">
+                <h4>Keylogger Backdoor Project</h4>
+                <p>Implemented a Python-based keylogger with a backdoor using Netcat and Metasploit, capturing keystrokes and maintaining remote access for security testing purposes.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+            
+            
+            
+            
+           
+
+    </div>
+</section>
+
+
+    <!-- testimonial design -->
+    <div class="testimonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/Hello.jpg" alt="">
+                        <h3>Rohit Narayanan</h3>
+                        <p>Working with Dhayanithi has been an absolute pleasure. His expertise in cybersecurity is truly impressive. 
+                            He approaches challenges with a meticulous attention to detail and consistently delivers innovative solutions. 
+                            Dhayanithi's dedication and proactive mindset make him an invaluable asset to any team.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/Hello1.jpg" alt="">
+                        <h3>Akhash</h3>
+                        <p>Dhayanithi is an exceptional cybersecurity professional. His deep understanding of security protocols and proactive approach to threat mitigation have significantly strengthened our digital defenses. His ability to translate complex technical issues into clear, actionable strategies is commendable. 
+                            Dhayanithi's dedication to staying ahead of emerging threats makes him a trusted advisor in our cybersecurity efforts..</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/dummy3.jpeg" alt="">
+                        <h3>Vishnu Prasadh</h3>
+                        <p>""Dhayanithi's leadership and team skills are exceptional. He consistently demonstrates a strong ability to lead cross-functional teams towards achieving cybersecurity goals. His collaborative approach fosters a productive environment where team members are motivated to innovate and excel. 
+                            Dhayanithi's leadership has been instrumental in implementing robust security measures and ensuring cohesive teamwork in our organization.""
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
